@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="index.css">
+  <title>Live Wheather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wheather_Card">
+      <header>
+        <i class="material-symbols-outlined" id="backBtn">arrow_back</i>
+        <h3>Wheather App</h3>
+      </header>
+      <div class="divider"></div>
+      <p class="info"></p>
+      <section class="input_Area active">
+        <input type="text" id="value" name="enter_cityName" placeholder="Enter city name" required>
+        <button id="search">Search</button>
+      </section>
+      <div class="result_Area">
+        <img src="./icons/clear.svg" alt="wheather icon">
+        <div class="wheather_Details">
+          <div class="temp">
+            <span class="num"></span>
+            <span class="deg">&#176</span>C
+          </div>
+          <div class="wheather">Clear Sky</div>
+          <div class="location">
+            <i class="material-symbols-outlined">pin_drop</i>
+            <span class="cityName">Motihari,In</span>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="bottom_Details">
+          <div class="column feels">
+            <i class="material-symbols-outlined">thermostat</i>
+            <div class="details">
+              <div class="temp">
+                <span class="num-2">16</span>
+                <span class="deg">&#176</span> C
+              </div>
+              <p>Feels Like</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class="material-symbols-outlined">humidity_mid</i>
+            <div class="details">
+              <span class="humidity_Num">16%</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
